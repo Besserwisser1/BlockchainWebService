@@ -1,0 +1,14 @@
+{% extends 'blockchainWebService/base.html' %}
+
+{% block title %}
+    Список разработчиков
+{% endblock %}
+
+{% block content %}
+    <p>
+        Вот они, слева направо:
+        {%  for name in names %}
+            {{name}},
+        {%endfor%}
+    </p>
+{% endblock %}
